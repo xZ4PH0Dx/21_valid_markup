@@ -660,7 +660,7 @@ var i,
 	// Regular expressions
 
 	// Whitespace characters http://www.w3.org/TR/css3-selectors/#whitespace
-	whitespace = "[\\x20\\t\\r\\n\\f]",
+	whitespace = "[\\x20\  \\r\\n\\f]",
 	// http://www.w3.org/TR/css3-syntax/#characters
 	characterEncoding = "(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",
 
@@ -8277,7 +8277,7 @@ if ( !support.enctype ) {
 
 
 
-var rclass = /[\t\r\n\f]/g;
+var rclass = /[  \r\n\f]/g;
 
 jQuery.fn.extend({
 	addClass: function( value ) {
@@ -8549,7 +8549,7 @@ var
 
 	rhash = /#.*$/,
 	rts = /([?&])_=[^&]*/,
-	rheaders = /^(.*?):[ \t]*([^\r\n]*)\r?$/mg, // IE leaves an \r character at EOL
+	rheaders = /^(.*?):[   ]*([^\r\n]*)\r?$/mg, // IE leaves an \r character at EOL
 	// #7653, #8125, #8152: local protocol detection
 	rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
 	rnoContent = /^(?:GET|HEAD)$/,
