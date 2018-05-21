@@ -1,6 +1,6 @@
 # Site of Real Estate Agency
 
-Check our lovely designed real estate agency [website](https://xz4ph0dx.github.io/21_valid_markup/).
+[TODO. There will be project description]
 
 # Project Goals
 
